@@ -1,0 +1,5 @@
+<div>
+  <select [disabled]="disabled" (change)="selectionChanged($event)">
+    <option *ngFor="let i of items" [value]="i.value">{{ i.display }}</option>
+  </select>
+</div>
